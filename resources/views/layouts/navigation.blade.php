@@ -50,6 +50,12 @@
                     <span>Registrar Contratisa</span>
                 </a>
             </li>
+            <li class="side-nav-item">
+                <a href="{{ route('catalogoContratistas.index') }}" class="side-nav-link">
+                    <i class="mdi mdi mdi-36px mdi-bank-plus"></i>
+                    <span>Usuarios</span>
+                </a>
+            </li>
             {{-- seccion de solicitudes historico --}}
             <li class="side-nav-item">
                 <a href="" class="side-nav-link">

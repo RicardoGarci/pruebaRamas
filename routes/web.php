@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ContratistaController;
+
 use Illuminate\Support\Facades\Route;
 
 Route::redirect('/', '/login');
@@ -14,6 +15,8 @@ Route::get('/dashboard', function () {
 //catalogo contratista
 Route::resource('/catalogoContratistas', ContratistaController::class);
 
+//catalogo usuarios
+Route::resource('/catalogoUsuarios', ContratistaController::class);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
